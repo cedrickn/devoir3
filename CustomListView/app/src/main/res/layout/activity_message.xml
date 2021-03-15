@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skyblue"
+    tools:context=".MessageActivity">
+
+
+    <ImageView
+        android:id="@+id/another_imageView"
+        android:layout_width="112dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="4dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_person_black_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/another_imageView7"
+        android:layout_width="112dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="244dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_person_black_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toEndOf="@+id/descriptionText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="177dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginLeft="132dp"
+        android:text="Merci de votre inscription! Que le seigneur vous protege"
+        android:textColor="@color/blackColor"
+        android:textSize="15sp"
+        android:background="@color/grayColor"
+        app:layout_constraintBottom_toBottomOf="@+id/another_imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/another_imageView"
+        app:layout_constraintVertical_bias="0.641" />
+
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="182dp"
+        android:layout_height="49dp"
+        android:background="@color/whiteColor"
+        android:lineSpacingExtra="2dp"
+        android:text="Mais laisser moi en paix!!!!!!!"
+        android:textColor="@color/blackColor"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/another_imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.287"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/another_imageView7"
+        app:layout_constraintVertical_bias="0.448" />
+
+    <Button
+        android:id="@+id/addtocart"
+        android:layout_width="211dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/bigBlue"
+        android:text="Send"
+        android:textColor="@color/blackColor"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/textView8"
+        android:layout_width="178dp"
+        android:layout_height="46dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/whiteColor"
+        android:text="Shadow clone justsu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addtocart" />
+</androidx.constraintlayout.widget.ConstraintLayout>

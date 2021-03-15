@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skyblue"
+    tools:context=".AnotherActivity">
+
+
+    <ImageView
+        android:id="@+id/another_imageView"
+        android:layout_width="208dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/another_imageView8"
+        android:layout_width="32dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="600dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_edit_black_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Title Text"
+        android:textColor="@color/blackColor"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/another_imageView"
+        android:layout_marginLeft="16dp" />
+    <TextView
+        android:id="@+id/date2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Date"
+        android:textColor="@color/blackColor"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/titleText"
+        app:layout_constraintTop_toBottomOf="@+id/titleText" />
+    <TextView
+        android:id="@+id/periode2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Période"
+        android:textColor="@color/blackColor"
+        app:layout_constraintStart_toStartOf="@+id/date2"
+        app:layout_constraintTop_toBottomOf="@+id/date2" />
+    <TextView
+        android:id="@+id/price2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="150$"
+        android:textColor="@color/blackColor"
+        app:layout_constraintStart_toStartOf="@+id/periode2"
+        app:layout_constraintTop_toBottomOf="@+id/periode2" />
+    <TextView
+        android:id="@+id/enligne2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="En ligne"
+        android:textColor="@color/blackColor"
+        app:layout_constraintStart_toStartOf="@+id/price2"
+        app:layout_constraintTop_toBottomOf="@+id/price2" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="239dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/enligne2"
+        app:layout_constraintTop_toBottomOf="@+id/enligne2" />
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="2.3"
+        app:layout_constraintBottom_toBottomOf="@+id/ratingBar"
+        app:layout_constraintStart_toEndOf="@+id/ratingBar"
+        app:layout_constraintTop_toTopOf="@+id/ratingBar"
+        android:layout_marginLeft="2dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="268dp"
+        android:layout_marginRight="268dp"
+        android:src="@drawable/ic_baseline_favorite_242"
+        app:layout_constraintBottom_toBottomOf="@+id/another_imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/another_imageView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Description"
+        android:textColor="@color/blackColor"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:lineSpacingExtra="2dp"
+        android:text="Nasi Padang is a Padang steamed rice served with various choices of pre-cooked dishes originated from West Sumatra, Indonesia. It is known across Indonesia as Nasi Padang, after the city of Padang the capital of West Sumatra province."
+        android:textColor="@color/blackColor"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/blackColor"
+        android:text="Add to cart"
+        android:background="@color/bigBlue"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonmessage"
+        android:layout_width="228dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/bigBlue"
+        android:text="Contact person"
+        android:textColor="@color/blackColor"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/descriptionText"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
