@@ -10,64 +10,63 @@
 
     <ImageView
         android:id="@+id/another_imageView"
-        android:layout_width="112dp"
-        android:layout_height="118dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="28dp"
         android:adjustViewBounds="true"
         android:src="@drawable/ic_person_black_24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.021"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@id/another_imageView7" />
 
     <ImageView
         android:id="@+id/another_imageView7"
-        android:layout_width="112dp"
-        android:layout_height="118dp"
-        android:layout_marginTop="244dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="28dp"
         android:adjustViewBounds="true"
         android:src="@drawable/ic_person_black_24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.589"
-        app:layout_constraintStart_toEndOf="@+id/descriptionText"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/addtocart"/>
 
     <TextView
         android:id="@+id/titleText"
-        android:layout_width="177dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="132dp"
-        android:layout_marginLeft="132dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="240dp"
         android:text="Merci de votre inscription! Que le seigneur vous protege"
-        android:textColor="@color/blackColor"
-        android:textSize="15sp"
         android:background="@color/grayColor"
+        android:textColor="@color/blackColor"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/another_imageView"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/another_imageView"
         app:layout_constraintTop_toTopOf="@+id/another_imageView"
-        app:layout_constraintVertical_bias="0.641" />
+        app:layout_constraintHorizontal_bias="0.04"/>
 
 
     <TextView
         android:id="@+id/descriptionText"
-        android:layout_width="182dp"
-        android:layout_height="49dp"
-        android:background="@color/whiteColor"
-        android:lineSpacingExtra="2dp"
+        android:maxWidth="240dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Mais laisser moi en paix!!!!!!!"
+        android:background="@color/whiteColor"
         android:textColor="@color/blackColor"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/another_imageView7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.287"
+        app:layout_constraintEnd_toStartOf="@+id/another_imageView7"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/another_imageView7"
-        app:layout_constraintVertical_bias="0.448" />
+        app:layout_constraintHorizontal_bias="0.96"
+        />
 
     <Button
         android:id="@+id/addtocart"
-        android:layout_width="211dp"
-        android:layout_height="50dp"
+        android:layout_width="64dp"
+        android:layout_height="48dp"
         android:layout_marginBottom="16dp"
         android:background="@color/bigBlue"
         android:text="Send"
@@ -75,19 +74,17 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.92"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/textView8"
-        android:layout_width="178dp"
-        android:layout_height="46dp"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
         android:background="@color/whiteColor"
-        android:text="Shadow clone justsu"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/addtocart" />
+        android:inputType="textLongMessage"
+        android:text="Yx"
+        app:layout_constraintBottom_toBottomOf="@+id/addtocart"
+        app:layout_constraintEnd_toStartOf="@+id/addtocart"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

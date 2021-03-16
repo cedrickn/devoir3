@@ -26,8 +26,7 @@ public class SearchActivity extends MenuAppCompatActivity {
                 if(clicked) {
                     image.setVisibility(View.VISIBLE);
                     clicked=false;
-                }
-                else if(clicked==false) {
+                } else {
                     image.setVisibility(View.INVISIBLE);
                     clicked=true;
                 }
