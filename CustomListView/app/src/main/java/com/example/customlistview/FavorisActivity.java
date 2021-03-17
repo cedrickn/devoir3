@@ -16,9 +16,9 @@ import androidx.annotation.Nullable;
 public class FavorisActivity extends MenuAppCompatActivity {
 
     ListView listView;
-    String mTitle[] = {"Apprendre a dessiner", "Apprendre a danser", "Apprendre le yoga", "Apprendre a apprendre", "Apprendre le bonheur"};
-    int images[] = {R.drawable.zoom, R.drawable.zoom, R.drawable.zoom, R.drawable.zoom, R.drawable.zoom};
-    int images2[] = {R.drawable.ic_baseline_favorite_242,R.drawable.ic_baseline_favorite_242,R.drawable.ic_baseline_favorite_242,R.drawable.ic_baseline_favorite_242,R.drawable.ic_baseline_favorite_242};
+    String[] mTitle = {"Apprendre a dessiner", "Apprendre a danser", "Apprendre le yoga", "Apprendre a apprendre", "Apprendre le bonheur"};
+    int[] images = {R.drawable.zoom, R.drawable.zoom, R.drawable.zoom, R.drawable.zoom, R.drawable.zoom};
+    int[] images2 = {R.drawable.ic_baseline_favorite_242,R.drawable.ic_baseline_favorite_242,R.drawable.ic_baseline_favorite_242,R.drawable.ic_baseline_favorite_242,R.drawable.ic_baseline_favorite_242};
     // so our images and other things are set in array
 
     @Override
@@ -37,11 +37,11 @@ public class FavorisActivity extends MenuAppCompatActivity {
     class MyAdapter extends ArrayAdapter<String> {
 
         Context context;
-        String rTitle[];
-        int rImgs[];
-        int rImgs2[];
+        String[] rTitle;
+        int[] rImgs;
+        int[] rImgs2;
 
-        MyAdapter (Context c, String title[], int imgs[], int imgs2[]) {
+        MyAdapter (Context c, String[] title, int[] imgs, int[] imgs2) {
             super(c, R.layout.favoris_row, R.id.titre, title);
             this.context = c;
             this.rTitle = title;

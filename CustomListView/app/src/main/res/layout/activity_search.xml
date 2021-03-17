@@ -10,48 +10,47 @@
 
     <TextView
         android:id="@+id/titleText"
-        android:layout_width="235dp"
-        android:layout_height="87dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Trouver un cours parfait pour vous!"
         android:textColor="@color/blackColor"
-        android:textSize="28sp"
+        android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.265" />
-
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
 
     <Button
         android:id="@+id/buttonOptions"
-        android:layout_width="69dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginEnd="48dp"
         android:background="@color/grayColor"
-        android:text="Options"
+        android:text="Plus"
         android:textColor="@color/blackColor"
-        android:textSize="10sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/titleText"
+        android:textSize="12sp"
         app:layout_constraintTop_toBottomOf="@+id/titleText"
-        app:layout_constraintVertical_bias="0.018" />
+        app:layout_constraintEnd_toEndOf="@id/titleText" />
 
     <ImageView
         android:id="@+id/imageViewcopied"
-        android:layout_width="309dp"
-        android:layout_height="503dp"
+        android:layout_width="360dp"
+        android:layout_height="480dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@id/buttonOptions"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.929"
+        app:layout_constraintEnd_toEndOf="parent"
         android:visibility="invisible"
-        app:srcCompat="@drawable/options" />
+        app:srcCompat="@drawable/options"
+         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

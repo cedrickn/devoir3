@@ -4,19 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="8dp"
     android:background="@color/skyblue"
     tools:context=".AnotherActivity">
 
 
     <ImageView
         android:id="@+id/another_imageView"
-        android:layout_width="100dp"
-        android:layout_height="112dp"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
         android:layout_marginTop="8dp"
         android:adjustViewBounds="true"
+        android:background="@color/blackColor"
         android:src="@drawable/zoom"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.013"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,27 +25,25 @@
         android:id="@+id/titleText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
         android:text="Apprendre a dessiner"
         android:textColor="@color/blackColor"
-        android:textSize="28sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/another_imageView"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/another_imageView"
         app:layout_constraintTop_toTopOf="@+id/another_imageView"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/another_imageView2"
-        android:layout_width="100dp"
-        android:layout_height="112dp"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
         android:layout_marginTop="12dp"
         android:adjustViewBounds="true"
+        android:background="@color/blackColor"
         android:src="@drawable/zoom"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.016"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/another_imageView" />
 
@@ -53,17 +51,69 @@
         android:id="@+id/titleText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
         android:text="Apprendre a apprendre"
         android:textColor="@color/blackColor"
-        android:textSize="28sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/another_imageView2"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/another_imageView2"
         app:layout_constraintTop_toTopOf="@+id/another_imageView2"
         app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 150"
+        app:layout_constraintStart_toStartOf="@+id/titleText"
+        app:layout_constraintBottom_toBottomOf="@id/another_imageView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 150"
+        app:layout_constraintStart_toStartOf="@+id/titleText2"
+        app:layout_constraintBottom_toBottomOf="@id/another_imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/titleText"
+        app:layout_constraintBottom_toBottomOf="@id/another_imageView"
+        app:layout_constraintStart_toEndOf="@+id/another_imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintVertical_bias="0"
+        android:src="@drawable/ic_baseline_close_24" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/titleText2"
+        app:layout_constraintBottom_toBottomOf="@id/another_imageView2"
+        app:layout_constraintStart_toEndOf="@+id/another_imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintVertical_bias="0"
+        android:src="@drawable/ic_baseline_close_24" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="Total du panier: 300$"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="@id/buttonachat"
+        app:layout_constraintBottom_toTopOf="@id/buttonachat"
+        />
 
     <Button
         android:id="@+id/buttonachat"
@@ -71,76 +121,14 @@
         android:layout_height="41dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="24dp"
         android:background="@color/bigBlue"
         android:text="Passer au paiement"
         android:textColor="@color/blackColor"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="1.0"/>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="72dp"
-        android:text="150$"
-        app:layout_constraintEnd_toEndOf="@+id/titleText"
-        app:layout_constraintHorizontal_bias="0.02"
-        app:layout_constraintStart_toEndOf="@+id/another_imageView"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="192dp"
-        android:text="150$"
-        app:layout_constraintEnd_toEndOf="@+id/titleText2"
-        app:layout_constraintHorizontal_bias="0.044"
-        app:layout_constraintStart_toEndOf="@+id/another_imageView2"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="106dp"
-        android:layout_height="34dp"
-        android:layout_marginBottom="16dp"
-        android:text="Total 300$"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.052"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="632dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.915"
-        app:layout_constraintStart_toEndOf="@+id/another_imageView"
-        app:layout_constraintTop_toBottomOf="@+id/titleText"
-        app:layout_constraintVertical_bias="1.0"
-        android:src="@drawable/ic_baseline_close_24" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.915"
-        app:layout_constraintStart_toEndOf="@+id/another_imageView"
-        app:layout_constraintTop_toBottomOf="@+id/titleText"
-        app:layout_constraintVertical_bias="0.159"
-        android:src="@drawable/ic_baseline_close_24" />
 </androidx.constraintlayout.widget.ConstraintLayout>

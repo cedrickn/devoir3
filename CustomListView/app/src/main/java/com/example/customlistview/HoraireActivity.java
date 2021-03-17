@@ -18,12 +18,12 @@ import androidx.annotation.Nullable;
 public class HoraireActivity extends MenuAppCompatActivity {
 
     ListView listView;
-    String mTitle[] = {"Apprendre a dessiner", "Apprendre a dessiner", "Apprendre a dessiner", "Apprendre a dessiner", "Apprendre a dessiner"};
-    String mDate[] = {"Lundi 12h00-14h00","Mardi 12h00-14h00","Mercredi 12h00-14h00","Jeudi 12h00-14h00","Vendredi 12h00-14h00"};
-    String mRatings[]={"0.1","0.1","0.1","0.1","0.1"};
-    int images[] = {R.drawable.zoom, R.drawable.zoom, R.drawable.zoom, R.drawable.zoom, R.drawable.zoom};
-    int images2[]={R.drawable.ic_mdi_star_rate, R.drawable.ic_mdi_star_rate,R.drawable.ic_mdi_star_rate,R.drawable.ic_mdi_star_rate,R.drawable.ic_mdi_star_rate};
-    int images3[]={R.drawable.ic_baseline_notifications_242, R.drawable.ic_baseline_notifications_24,R.drawable.ic_baseline_notifications_24,R.drawable.ic_baseline_notifications_24,R.drawable.ic_baseline_notifications_24};
+    String[] mTitle = {"Apprendre a dessiner", "Apprendre a dessiner", "Apprendre a dessiner", "Apprendre a dessiner", "Apprendre a dessiner"};
+    String[] mDate = {"Lundi 12h00-14h00","Mardi 12h00-14h00","Mercredi 12h00-14h00","Jeudi 12h00-14h00","Vendredi 12h00-14h00"};
+    String[] mRatings ={"0.1","0.1","0.1","0.1","0.1"};
+    int[] images = {R.drawable.zoom, R.drawable.zoom, R.drawable.zoom, R.drawable.zoom, R.drawable.zoom};
+    int[] images2 ={R.drawable.ic_mdi_star_rate, R.drawable.ic_mdi_star_rate,R.drawable.ic_mdi_star_rate,R.drawable.ic_mdi_star_rate,R.drawable.ic_mdi_star_rate};
+    int[] images3 ={R.drawable.ic_baseline_notifications_242, R.drawable.ic_baseline_notifications_24,R.drawable.ic_baseline_notifications_24,R.drawable.ic_baseline_notifications_24,R.drawable.ic_baseline_notifications_24};
     // so our images and other things are set in array
 
     @Override
@@ -129,14 +129,14 @@ public class HoraireActivity extends MenuAppCompatActivity {
     class MyAdapter extends ArrayAdapter<String> {
 
         Context context;
-        String rTitle[];
-        String rDate[];
-        String rRatings[];
-        int rImgs[];
-        int rImgs2[];
-        int rImgs3[];
+        String[] rTitle;
+        String[] rDate;
+        String[] rRatings;
+        int[] rImgs;
+        int[] rImgs2;
+        int[] rImgs3;
 
-        MyAdapter (Context c, String title[], String date[], String ratings[], int imgs[], int imgs2[], int imgs3[]) {
+        MyAdapter (Context c, String[] title, String[] date, String[] ratings, int[] imgs, int[] imgs2, int[] imgs3) {
             super(c, R.layout.row, R.id.titre, title);
             this.context = c;
             this.rTitle = title;

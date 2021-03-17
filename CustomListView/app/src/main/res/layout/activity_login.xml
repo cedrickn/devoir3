@@ -37,8 +37,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
-        android:text="User name"
-        android:textColor="@color/colorAccent" />
+        android:layout_marginTop="16dp"
+        android:text="Username"
+        android:textColor="@color/blackColor" />
 
     <EditText
         android:id="@+id/username"
@@ -53,7 +54,7 @@
         android:layout_marginHorizontal="30dp"
         android:layout_height="wrap_content"
         android:text="Password"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/blackColor"
         />
 
     <EditText

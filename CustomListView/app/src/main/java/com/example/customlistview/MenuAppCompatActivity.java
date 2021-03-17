@@ -19,6 +19,7 @@ public class MenuAppCompatActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        System.out.println();
         switch (item.getItemId()) {
             case R.id.action_profile:
                 Intent intent = new Intent(this, ProfileActivity.class);
