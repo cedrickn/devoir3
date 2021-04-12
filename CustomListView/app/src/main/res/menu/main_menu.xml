@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Profile"
+    android:icon="@drawable/ic_baseline_house_24"
+    android:id="@+id/action_house"
+    app:showAsAction="always|withText"
+
+    />
+
+    <item android:title="Workout"
+        android:icon="@drawable/ic_weight_svgrepo_com"
+        android:id="@+id/action_edit"
+        app:showAsAction="always"
+        />
+
+    <item android:title="Workout information"
+        android:icon="@drawable/ic_baseline_menu_book_24"
+        android:id="@+id/action_horaire"
+        app:showAsAction="always"
+        />
+
+    <item android:title="Main"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:id="@+id/action_profile"
+        app:showAsAction="always|withText"
+
+        />
+
+    <item android:title="Search"
+        android:icon="@drawable/ic_lightning_svgrepo_com"
+        android:id="@+id/action_search"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        />
+
+
+
+
+
+
+
+
+</menu>

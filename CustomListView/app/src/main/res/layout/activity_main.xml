@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@color/skyblue"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WORKOUT PLAN"
+        android:gravity="center"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="3 months" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="570dp"
+        android:divider="@color/lightGrayColor">
+
+    </ListView>
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="385dp"
+        android:layout_height="66dp"
+        app:srcCompat="@drawable/midbar" />
+
+    <!--now check how it looks-->
+    <!--friends as you can see custom listview show its divider
+    now let's hide it's divider i have a background color that is gray color-->
+    <!-- this color is very dark-->
+    <!--so friends this looks much better now
+    thank for watching this is special tutorial for beginners-->
+
+</LinearLayout>
